@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Telangana Police FIR Management System - Design System */
+
+@layer base {
+  :root {
+    --background: 200 10% 94%; /* Light gray #ECEFF1 */
+    --foreground: 200 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 20% 15%;
+
+    /* Teal primary colors */
+    /* Teal primary colors */
+    --primary: 195 37% 44%; /* #46879A */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 37% 44%; /* #46879A */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 10% 90%;
+    --muted-foreground: 200 10% 40%;
+
+    --accent: 195 37% 44%; /* #46879A */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 15% 85%;
+    --input: 200 15% 85%;
+    --ring: 195 37% 44%; /* #46879A */
+
+    --radius: 0.5rem;
+
+    /* Custom colors for FIR statuses */
+    --status-filed: 217 91% 60%; /* Blue */
+    --status-filed-foreground: 0 0% 100%;
+    --status-ongoing: 25 95% 53%; /* Orange */
+    --status-ongoing-foreground: 0 0% 100%;
+    --status-closed: 142 71% 45%; /* Green */
+    --status-closed-foreground: 0 0% 100%;
+
+    /* Warning banner colors */
+    --warning-bg: 48 96% 89%; /* Yellow */
+    --warning-text: 0 84% 40%; /* Red */
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    
+    --background: 200 20% 10%;
+    --foreground: 200 10% 95%;
+
+    --card: 200 20% 12%;
+    --card-foreground: 200 10% 95%;
+
+    --popover: 200 20% 12%;
+    --popover-foreground: 200 10% 95%;
+
+    --primary: 195 37% 44%; /* #46879A */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 37% 44%; /* #46879A */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 20% 20%;
+    --muted-foreground: 200 10% 60%;
+
+    --accent: 195 37% 44%; /* #46879A */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 20%;
+    --input: 200 20% 20%;
+    --ring: 195 37% 44%; /* #46879A */
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-shadow-police {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+}
